@@ -15,46 +15,52 @@ ul {
 
 body {
     font-family: "Roboto" ;
+    margin: 0px;
+    width: 1600px;
 }
 
-/* header{
+header{
     display: flex; 
     align-items: center;
-} */
+    height: 80px;
+}
 
-.logo {
+header .logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
+    margin-left: 215px;
 }
 
 .logo .color_logo {
     color: var(--blue_logo_color);
 }
 
-/* .navigation .links{
+.navigation .links{
     display: flex;
-    
-} */
+    margin-left: 102px;
+}
 
 .navigation .links li{
-    margin-right: 20px;
+    margin-right: 45px;
     font-weight: 500;
 }
 
+.navigation .links li:last-child {
+    margin-right: 0;
+}
 .navigation .links li :hover {
     color: var(--blue_logo_color);
-    margin-right: 1px;
 }
 
 .contact_info {
     display: flex;
+    margin-left: 309px;
 }
 
 .contact_info li a{
-    margin-right: 20px;
+    margin-right: 30px;
     font-weight: 500;
-    
     color:var(--text_grey_color);
     fill:var(--text_grey_color);
 }
@@ -67,13 +73,21 @@ body {
 /*main*/
 
 .order{
+    display: flex;
     background-color: #2F303A;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
 
 .order h1{
     color: #ffff;
     font-size: 44px;
     font-weight: 900;
+    width: 1048px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .order_button{
@@ -84,17 +98,36 @@ body {
     font-weight: 700;
     border: 0;
     border-radius: 4px;
+    width: 200px;
+    height: 50px;
 }
 
 /* main section description */
 
-.description ul h1{
-    font-weight: 700;
-    color: #0000;
+.description{
+    margin-top: 44px;
 }
 
-.description ul li .image{
+ .description ul {
+    display: flex;
+    margin-left: 215px;
+ }
+
+ .description ul li{
+    margin-right: 30px;
+ }
+
+  .description ul li:last-child {
+      margin-right: 0;
+  }
+
+.description ul li div{
     background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description ul li h3 {
@@ -103,13 +136,27 @@ body {
 
 .description ul li p {
     color: var(--text_grey_color);
+    width: 270px;
 }
 
 /*main section example*/
+.example{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .example h2{
     font-size: 36px;
     font-weight: 700;
+}
+
+.example ul{
+    display: flex;
+}
+
+.example ul li{
+    margin-left: 29px;
 }
 
 .example ul li img{
@@ -118,6 +165,9 @@ body {
 
 .our_team {
     background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .our_team h2 {
@@ -125,12 +175,21 @@ body {
     font-weight: 700;
 }
 
+.our_team .workers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .our_team .workers .worker{
     background-color: #FFFFFF;
     width: 270px;
     border-radius: 0 0 4px 4px;
     box-shadow: var(--card-shadow);
-    margin-bottom: 10px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .our_team .workers .worker .name{
@@ -152,6 +211,18 @@ body {
     fill: #AFB1B8;
 }
 
+.our_team .workers .worker ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.our_team .workers .worker ul li{
+    margin-right: 10px;
+}
+
 .our_team .workers .worker a:hover {
     background-color: var(--blue_logo_color);
     fill: white;
@@ -160,8 +231,24 @@ body {
 
 /* footer */
 
-footer {
+ footer {
     background-color: #2F303A;
+    display: flex;
+    width: 1600px;
+    height: 252px;
+    align-items: center;
+}
+
+footer .info {
+    margin-left: 215px;
+}
+
+footer .social_medias{
+    margin-left: 43px;
+}
+
+footer .get_info{
+    margin-left: 93px;
 }
 
 footer .logo{
@@ -185,6 +272,18 @@ footer h2 {
     color: #FFFFFF;
 }
 
+footer .social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+footer .social_media li {
+    margin-right: 10px;
+}
+
 footer .social_media li a {
     display: flex;
     justify-content: center;
@@ -198,7 +297,7 @@ footer .social_media li a {
 
 footer .social_media li a:hover {
     background-color: var(--blue_logo_color);
-}
+} 
 
 footer form label{
     font-weight: 700;
