@@ -17,6 +17,8 @@ body {
     font-family: "Roboto" ;
     margin: 0px;
     width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header{
@@ -249,6 +251,8 @@ footer .social_medias{
 
 footer .get_info{
     margin-left: 93px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer .logo{
@@ -299,6 +303,10 @@ footer .social_media li a:hover {
     background-color: var(--blue_logo_color);
 } 
 
+footer form {
+    display: flex;
+}
+
 footer form label{
     font-weight: 700;
     font-style: normal;
@@ -313,14 +321,26 @@ footer form label input{
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
+    width: 358px;
+    height: 50px;
 }
 
 footer form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: #FFFFFF;
     color: #FFFFFF;
     border: 0px;
     border-radius: 4px;
+    font-size: 16px;
     background-color: var(--blue_logo_color);
     cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-left: 13px;
 }
 
+footer form button .image{
+    margin-left: 13px;
+}
